@@ -1,79 +1,138 @@
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('../images/bg/retina_wood_@2X.png');
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
 }
 
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
 }
 
 /* Customize container */
 @media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+    .container {
+        max-width: 730px;
+    }
 }
+
 .container-narrow > hr {
-  margin: 30px 0;
+    margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
 }
+
 .jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+    font-size: 21px;
+    padding: 14px 24px;
 }
 
 /* Supporting marketing content */
 .marketing {
-  margin: 40px 0;
+    margin: 40px 0;
 }
+
 .marketing p + h4 {
-  margin-top: 28px;
+    margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
 }
+
+/* CSS ANIMATIONS BY JOHN */
+
+.main-view.ng-enter {
+    -webkit-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+}
+
+.main-view.ng-leave {
+    -webkit-transition: 0s linear all;
+    transition: 0s linear all;
+}
+
+.main-view.ng-enter,
+.main-view.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+.main-view.ng-leave,
+.main-view.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+/* BOOTSTRAP OVERRIDES */
+
+.navbar {
+    background-image: url('../images/bg/debut_dark.png');
+}
+
+/*.mainview-enter,*/
+/*.mainview-leave*/
+/*{*/
+/*-webkit-transition: 550ms cubic-bezier(0.770, 0.000, 0.175, 1.000) all;*/
+/*-moz-transition: 550ms cubic-bezier(0.770, 0.000, 0.175, 1.000) all;*/
+/*-ms-transition: 550ms cubic-bezier(0.770, 0.000, 0.175, 1.000) all;*/
+/*-o-transition: 550ms cubic-bezier(0.770, 0.000, 0.175, 1.000) all;*/
+/*transition: 550ms cubic-bezier(0.770, 0.000, 0.175, 1.000) all;*/
+/*}*/
+
+/*.mainview-enter {*/
+/*left: 100%;*/
+/*}*/
+/*.mainview-enter.mainview-enter-active {*/
+/*left: 0;*/
+/*}*/
+
+/*.mainview-leave {*/
+/*left: 0;*/
+/*}*/
+/*.mainview-leave.mainview-leave-active{*/
+/*left: -100%;*/
+/*}*/
