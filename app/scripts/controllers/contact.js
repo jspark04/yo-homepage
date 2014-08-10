@@ -2,16 +2,16 @@
 
 /**
  * @ngdoc function
- * @name yoHomepageApp.controller:ResumeCtrl
+ * @name yoHomepageApp.controller:ContactCtrl
  * @description
- * # ResumeCtrl
+ * # ContactCtrl
  * Controller of the yoHomepageApp
  */
 angular.module('yoHomepageApp')
-    .controller('ResumeCtrl', function ($rootScope, $scope, $location, $anchorScroll) {
-        $rootScope.currentState = 'resume';
+    .controller('ContactCtrl', function ($rootScope, $scope, $location, $anchorScroll) {
+        $rootScope.currentState = 'contact';
 
-        $scope.goToTop = function() {
+        $scope.goToTop = function () {
             console.log('Entering scroll function goToTop()');
 
             // set the location.hash to the id of
@@ -22,5 +22,4 @@ angular.module('yoHomepageApp')
             $anchorScroll();
         };
         $scope.goToTop();
-    }
-);
+    });
